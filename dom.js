@@ -157,10 +157,35 @@ let itemList = document.querySelector('#items');
 // itemList.previousElementSibling.style.color = 'green';
 
 // CREATING ELEMENTS INSERTING THEM //
+// in console F12 in chrome
 // createElement
 // Create a div
 var newDiv = document.createElement('div');
 
+// Add class
 newDiv.className = 'hello';
 
+// Add id
+newDiv.id = 'hello1';
+
+// Add attr
+newDiv.setAttribute('title', 'Hello Div');
+
+// Create text node to fill the div with content.
+let newDivText = document.createTextNode('Hello World');
+
+// Add text to div
+newDiv.appendChild(newDivText);
+
+let container = document.querySelector('header .container');
+let h1 = document.querySelector('header h1');
+
 console.log(newDiv);
+
+newDiv.style.fontSize = '30px';
+
+container.insertBefore(newDiv, h1);
+// 2 parameters, first is whats being inserted, 2nd is what comes before it.
+
+//  EVENTS // CLICK AND KEYBOARD
+
